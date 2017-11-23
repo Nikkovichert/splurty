@@ -3,11 +3,9 @@
   <head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <header class="row">
       <div class="col-3">
@@ -21,19 +19,32 @@
         </div>
       </div>
       <div class="col-4 slogan">
-        Spurting out unsolicited advice about entrepreneurship since 2016
+        Spurting out unsolicited advice about entrepreneurship since 2017
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
-        <%= link_to 'About', '#' %>
+        <%= link_to 'Contribute  ', '#' %>
+        <%= link_to '  About', '#' %>
       </div>
-
     </header>
-
     <hr />
-
     <br class="clear" />
 
+  <div class="container">
     <%= yield %>
+  </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Built by Nikko in his Sunshine Coast retreat
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
