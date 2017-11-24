@@ -9,20 +9,22 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
+        <%= link_to root_path, class: 'logo' do %>  
+          <div class="circle">
+            <br />
+            You know
+            <br />
+            you need
+            <br />
+            to code
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
-        Spurting out unsolicited advice about entrepreneurship since 2017
+        Trying his best to code since 2017
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute  ', '#' %>
+        <%= link_to 'Contribute  ', new_quote_path %>
         <%= link_to '  About', '#' %>
       </div>
     </header>
@@ -37,10 +39,10 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root-path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
-            Built by Nikko in his Sunshine Coast retreat
+            Built by Nikko at his Sunshine Coast retreat
           </div>
         </div>
       </div>
